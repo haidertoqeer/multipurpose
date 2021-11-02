@@ -95,5 +95,13 @@
                 top: 22px;
         }
     }
+    
+    #newArrival{
+        .img-box{
+            img{
+                object-fit: cover;
+            }
+        }
+    }
 }
 
