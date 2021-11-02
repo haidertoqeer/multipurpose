@@ -1,0 +1,99 @@
+
+
+/*------------------------------------------------  Responsive Styling  ------------------------------------------------*/
+
+@media screen and (max-width: 1150px) {
+  .cst-col-lg-md {
+    display: none;
+  }
+    .cst-col-lg-10{
+    display: block;
+    }
+    Header{
+        .menu-ul{
+            li{
+                margin: 0;
+                   
+            }  
+        } 
+    }
+   
+    #bg-fixed{
+         .bottom-cst-0{
+        position: relative;
+        }
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    Header{
+        .menu-ul{
+            text-align: center;
+            li{
+                    padding: 22px 15px;
+            }  
+        } 
+    }
+}
+
+@media screen and (max-width: 767px) {
+   
+    #bg-fixed{
+        .bottom-cst-0{
+            img{
+                    max-width: 75%;
+                    margin: auto;
+                    display: inherit;
+                }
+        }
+        .text-right-cst{
+        text-align: center;
+        }
+    }
+}
+  
+
+
+
+@media screen and (max-width: 600px) {
+    Header{
+        min-height: 45px;
+        .menu-button{
+            display: inline-block;
+        }
+        .logo{
+            max-width: 30px;
+            display: inline-block;
+        }
+        .menu-ul{
+            opacity: 0;
+            height: 0px;
+            &.show{
+                opacity: 1;
+                height: 100%;
+            }
+            li{
+                display: block;
+            }
+            .submenu{
+                position: relative;
+            }
+        }
+    }
+    
+        .section-heading{
+            font-size: 3.5rem;
+             &:before{
+                width: 40px;
+                left: -60px;
+                top: 22px;
+            }
+            &:after{
+                width: 40px;
+                right: -60px;
+                top: 22px;
+        }
+    }
+}
+

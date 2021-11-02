@@ -1,0 +1,53 @@
+/*------------------------------------------------  Popular Item  ------------------------------------------------*/
+
+#popular_item{
+    p.italic{
+        font-size: 14px;
+        font-weight: 300;
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .price-effect-tag{
+        position: relative;
+        top: -3px;
+        background: $sec-color;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+    .inner-product{
+        background: #fbfbfb;
+        margin: 10px;
+        border-radius: 2px;
+        overflow: hidden;
+        box-shadow: 1px 1px 8px 1px #eceded;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .img-product-box{
+            height: 400px;
+            overflow: hidden;
+        }
+        &:hover{
+            .price-effect-tag{
+                top: -44px;
+            }
+        }
+    }
+    .product-title-description{
+        h1{
+            margin-top: 30px;
+            font-size: 3rem;
+            color: $sec-color;
+            font-weight: 800;
+        }
+    }
+
+}

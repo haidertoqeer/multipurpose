@@ -1,0 +1,182 @@
+
+
+/*------------------------------------------  Basic Variables  ----------------------------------------------------------*/
+
+
+$base-color: #3C295B;
+$sec-color: #E51B39;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap');
+
+.heading-family{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-cst-secondary{
+    background: $sec-color;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: inherit;
+    transition: all 0.3s;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+#preloader{
+    background: #EAE8ED url(../images/loader.gif) no-repeat center center;
+    background-size: 5%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px lightgrey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $sec-color;
+  border-radius: 3px;
+}
+
+
+::-moz-selection { /* Code for Firefox */
+ color: white;
+  background: $sec-color;
+}
+
+::selection {
+ color: white;
+  background: $sec-color;
+}
+
+
+// Section Heading Styling
+
+    .section-heading{
+        margin-top: 50px;
+        font-size: 4.5rem;
+        font-weight: 800;
+        color: $base-color;
+        position: relative;
+    display: inline-block;
+        
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background: $sec-color    ;
+            left: -120px;
+            top: 28px;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 1px;
+            background: $sec-color    ;
+            right: -120px;
+            top: 28px;
+        }
+    }
+
+.buy-now-button{
+    background: $base-color;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    box-shadow: 2px 2px 7px 2px lightgrey;
+    
+    &:hover{
+        background: white;
+        color: $base-color;
+        border-color: $base-color;
+    }
+}
+
+
+.overlay-button{
+    width: 90%;
+    background: #000000db;
+    height: 100%;
+    display: inline-block;
+    height: 100px;
+    position: relative;    
+    top: 0px;
+    transition: all 0.3s ease-out;
+}
+.more-product{
+    background: $sec-color;
+    color: white !important;
+    padding: 15px 50px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    display: inline-block;
+//    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 7px 2px #00000017;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $base-color;
+        z-index: 1;
+        transition: transform 0.5s;
+        transition-timing-function: ease;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+        transform: scaleX(0);
+        border-radius: 0px;
+        z-index: 1
+    }
+    
+    &:hover::before{
+        transform: scaleX(1);
+        color: #fff !important;
+        z-index: -1;
+    }
+ 
+    }
+
+
+.button-effects{
+    width: 300px;
+    display: inherit;
+    margin: auto;
+    height: 86px;
+    overflow: hidden;
+}

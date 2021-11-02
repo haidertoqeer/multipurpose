@@ -1,0 +1,97 @@
+
+/*------------------------------------------------  New Arrivals Styling  ------------------------------------------------*/
+
+#newArrival{
+    padding: 40px 0;
+//    .section-heading{
+//        margin-top: 50px;
+//        font-size: 4.5rem;
+//        font-weight: 800;
+//        color: $base-color;
+//        position: relative;
+//    display: inline-block;
+//        
+//        &:before{
+//            content: '';
+//            position: absolute;
+//            width: 100px;
+//            height: 1px;
+//            background: $sec-color    ;
+//            left: -120px;
+//            top: 28px;
+//        }
+//        &:after{
+//            content: '';
+//            position: absolute;
+//            width: 100px;
+//            height: 1px;
+//            background: $sec-color    ;
+//            right: -120px;
+//            top: 28px;
+//        }
+//    }
+    .inner-box{
+        margin-top: 50px;
+    }
+    .img-box{
+        height: 350px;
+        overflow: hidden;
+        .price-tag{
+            z-index: 99;
+            position: relative;
+            bottom: 350px;
+            color: $sec-color;
+            width: 90%;
+            font-size: 20px;
+            text-align: center;
+            display: inherit;
+            transition: all 0.3s;
+        }
+        img{
+            transform: scale(1);
+            transition: all 0.5s;
+                min-height: 100%;
+    max-height: 350px;
+    width: 100%;
+        }
+        .over-div{
+                height: 350px;
+                width: 100%;
+                background: rgb(255,255,255);
+                background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 97%);
+                position: relative;
+                top: 0;
+                transition: all 0.3s;
+            }
+        &:hover{
+            .over-div{
+                top: -350px;
+                cursor: pointer;
+            }
+            img{
+            transform: scale(1.1);
+            }
+        }
+        
+        &:hover{
+            .price-tag{
+                bottom: 420px;
+            }
+        }
+       
+    }
+    .title-heading{
+            font-size: 2rem;
+    color: $sec-color;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    }
+    .description-para{
+        font-size: 13px;
+        color: gray;
+        text-align: center;
+        font-weight: 300;
+    }
+    
+}
